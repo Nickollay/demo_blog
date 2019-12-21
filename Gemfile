@@ -44,6 +44,9 @@ gem 'simple_form', '~> 5.0', '>= 5.0.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+#Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack.
+#gem 'binding_of_caller', '~> 0.7.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -64,16 +67,21 @@ group :development do
   gem 'guard-bundler', '~> 2.2', '>= 2.2.1'
   # Make errors looking better
   gem 'better_errors', '~> 2.5', '>= 2.5.1'
+ 
 
 
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  #Run Selenium tests more easily with install and updates for all supported webdrivers.
+  gem 'webdrivers', '~> 4.1', '>= 4.1.3'
+  
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  #It was an error mesage, so I disabled this gem
+  #gem 'chromedriver-helper'
+
+   #Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website
+  gem 'capybara', '~> 3.29'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
