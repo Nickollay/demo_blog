@@ -1,0 +1,18 @@
+<div class="box">
+	<article class="media">
+		<div class="media-content">
+			<div class="content">
+				<p>
+					<strong>
+						<%= comment.name %>:
+					</strong>
+
+					<!-- Reference the model 'comment' with the data tipe 'comment' --> 
+					<%= comment.comment %>
+				</p>
+			</div>
+		</div>
+		
+		<%= link_to 'Delete', [comment.post, comment], method: :delete, class "button is-danger", data: {confirm: "Are you sure?"} %>
+	</article>
+</div>
