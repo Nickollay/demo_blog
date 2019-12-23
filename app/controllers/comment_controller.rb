@@ -1,18 +1,18 @@
-class CommentController < ApplicationController
-	def create
+class CommentsController < ApplicationController
+	#def create
 		@post = Post.find(params[:post_id])
 		@comment = @post.comments.create(comment_params)
 		redirect_to post_path(@post)
-	end
+	#end
 
-	def destrroy
+	#def destrroy
 
-	end
+	#end
 
 
-	private
+	#private
 
-	def comment_params
+	#def comment_params
 		params.require(:comment).permit(:name, :comment)
-	end	
+	#end	
 end
