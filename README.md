@@ -21,7 +21,8 @@ https://rubygems.org/
 and some google serch of course:)
 
  ## To deploy it on heroku, I used:
-https://www.theodinproject.com/courses/web-development-101/lessons/your-first-rails-application
+https://www.theodinproject.com/courses/ruby-on-rails/lessons/preparing-for-deployment
+https://www.theodinproject.com/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails
 
  ## My enviroment:
 * Ruby version
