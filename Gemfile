@@ -80,7 +80,7 @@ group :development do
   # Guard::Bundler automatically install/update your gem bundle when needed
   gem 'guard-bundler', '~> 2.2', '>= 2.2.1'
   # Make errors looking better
-  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'better_errors', '~> 2.9'
  
 
 
